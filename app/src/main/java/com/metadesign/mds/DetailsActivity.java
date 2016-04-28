@@ -102,10 +102,11 @@ public class DetailsActivity extends Activity {
             @Override
             public void onClick(View v) {
                 editor.putString("address",ed_address.getText().toString());
-                editor.putString("phone", ed_address.getText().toString());
+                editor.putString("phone", ed_phone.getText().toString());
                 editor.putString("designation", ed_designation.getText().toString());
                 editor.putString("deparment", ed_department.getText().toString());
                 editor.putString("income", ed_income.getText().toString());
+
                 editor.commit();
                 employeeDetailQuery.addEmployeDetails(new EmployeeDetail(
                         ed_address.getText().toString(),
